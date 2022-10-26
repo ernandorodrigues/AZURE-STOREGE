@@ -2,7 +2,7 @@ resource "azurerm_resource_group" "first_resouce_grupo" {
   name     = ""
   location = var.location
 
-  tags = ""
+  tags = local.comnon_tags
  }
   resource "azurerm_storage_account" "firts_stot=rage_account" {
   name                     = "ernandosyorageaccont"
@@ -11,7 +11,7 @@ resource "azurerm_resource_group" "first_resouce_grupo" {
   account_tier             = var.account_tier
   account_replication_type = var.account_replication_type
 
-  tags = ""
+  tags = local.comnon_tags
     
   }
   
